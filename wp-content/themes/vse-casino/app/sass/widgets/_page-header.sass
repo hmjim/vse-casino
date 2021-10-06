@@ -1,0 +1,102 @@
+.page-header
+	padding: 20px 0
+	background-color: $color-dark
+	margin-bottom: 60px
+
+.cas-banner
+	display: flex
+	flex-wrap: wrap
+	padding: 20px 0
+
+	.cas-thumb
+		width: calc(25% - 15px)
+		margin-right: 30px
+		+r(991)
+			width: 100%
+			margin-right: 0
+			margin-bottom: 30px
+			text-align: center
+
+	.cas-features
+		width: calc(75% - 15px)
+		display: flex
+		flex-wrap: wrap
+		+r(991)
+			width: 100%
+
+	.cas-features-left,
+	.cas-features-right
+		width: calc(50% - 15px)
+		+r(767)
+			width: 100%
+			text-align: center
+
+	.cas-features-left
+		margin-right: 30px
+		+r(767)
+			margin-right: 0
+
+	.cas-features-item
+		margin-bottom: 15px
+
+		.cas-features-title
+			margin-bottom: 5px
+
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			+r(767)
+				justify-content: center
+
+			li
+				display: flex
+				padding: 5px 10px
+				margin: 0 5px 5px 0
+				background-color: #fff
+				border-radius: 2px
+
+		&.country
+
+			ul
+
+				li
+					padding: 0
+					background-color: transparent
+
+	.cas-features-rate
+		display: flex
+		align-items: center
+		margin-bottom: 5px
+		+r(767)
+			flex-direction: column-reverse
+
+	.cas-features-bar
+		height: 25px
+		border: 1px solid #8e8e8e
+		border-radius: 50px
+		position: relative
+		width: 290px
+		margin-right: 30px
+		+r(767)
+			margin-right: 0
+
+	.cas-features-count
+		position: absolute
+		height: 100%
+		top: 0
+		left: 0
+		background-image: linear-gradient(90deg, #FFD700 2%, #FF8A00 96%)
+		border-radius: 50px
+
+	.cas-features-notice
+		color: $color-blue
+		font-size: 14px
+
+	.cas-features-bonus
+		font-size: 20px
+		font-weight: 500
+		line-height: 24px

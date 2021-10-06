@@ -1,0 +1,151 @@
+.menu
+	margin: 0
+	padding: 0
+	list-style-type: none
+	display: flex
+
+	li
+
+		&:not(:last-child)
+			margin-right: 10px
+
+		a
+			text-decoration: none
+
+.header-menu,
+.footer-menu
+	flex-grow: 1
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+
+	.menu
+		+r(991)
+			flex-direction: column
+			align-items: center
+
+		li
+			margin: 0 30px
+			+r(1199)
+				margin: 0 10px
+			+r(991)
+				margin: 5px 0
+
+			a
+				padding: 30px 0
+				display: inline-block
+				color: $color-text
+				font-weight: 500
+				font-size: 20px
+				line-height: 60px
+				position: relative
+				+r(991)
+					padding: 5px 0
+					line-height: 20px
+				+pseudo(before)
+					top: 0
+					left: calc(50% - 10px)
+					opacity: 0
+					transition: $transition
+					+arr(20, 10, $color-accent, b)
+					+r(991)
+						top: calc(50% - 10px)
+						left: -20px
+						+arr(10, 20, $color-accent, r)
+				+pseudo(after)
+					bottom: 0
+					left: calc(50% - 10px)
+					opacity: 0
+					transition: $transition
+					+arr(20, 10, $color-accent, t)
+					+r(991)
+						top: calc(50% - 10px)
+						left: auto
+						right: -20px
+						+arr(10, 20, $color-accent, l)
+
+				&:hover
+
+					&::before,
+					&::after
+						opacity: 1
+
+			&.current-menu-item
+
+				a
+
+					&::before,
+					&::after
+						opacity: 1
+
+.header-menu
+	+r(991)
+		padding-top: 10px
+		width: 100%
+		display: none
+
+	&.on
+		+r(991)
+			display: block
+
+.footer-menu
+
+	.menu
+
+		li
+
+			a
+
+				&::after
+					display: none
+					+r(991)
+						display: block
+
+.menu-toggle
+	display: none
+	width: 50px
+	height: 50px
+	position: relative
+	cursor: pointer
+	+r(991)
+		display: block
+
+	&::before,
+	&::after
+		position: absolute
+		content: ''
+		height: 2px
+		left: 0
+		top: 50%
+		background-color: $color-blue
+		transform: translateY(-50%)
+		transition: all .2s ease-in-out
+
+	&::before
+		width: 32px
+		margin-top: -3px
+
+	&::after
+		width: 20px
+		margin-top: 3px
+
+	&:hover
+
+		&::before,
+		&::after
+			background-color: $color-accent
+
+	&.on
+
+		&::before,
+		&::after
+			margin-top: 0
+			background-color: $color-accent
+
+		&::before
+			transform: translateY(-50%) rotate(45deg)
+
+		&::after
+			width: 32px
+			transform: translateY(-50%) rotate(-45deg)
+

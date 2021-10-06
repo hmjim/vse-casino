@@ -1,0 +1,207 @@
+.c-table
+	margin-bottom: 60px
+
+	.c-thead
+		+r(767)
+			display: none
+
+		.c-tr
+			padding: 17px 0
+			background-color: $color-dark
+			box-shadow: $box-shadow
+
+	.c-tbody
+
+		.c-tr
+			padding: 17px 0 13px
+			background-color: $color-block-bg
+			box-shadow: $box-shadow
+			position: relative
+			+r(767)
+				padding: 0 0 20px
+
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5)
+				+pseudo(before)
+					width: 6px
+					height: 100%
+					top: 0
+					left: 0
+					background-image: linear-gradient(180deg, #ffd700 0%, #ff8a00 100%)
+					border-radius: 5px 0 0 5px
+					+r(767)
+						display: none
+
+				.c-logo
+
+					.c-logo-img
+						position: relative
+						+pseudo(before)
+							width: 49px
+							height: 49px
+							top: 0
+							right: 0
+							+png(c-label)
+							+r(991)
+								width: 30px
+								height: 30px
+								background-size: cover
+
+				.c-pos
+					+r(767)
+						position: relative
+						//color: $color-dark
+						font-weight: 500
+						//background-image: linear-gradient(180deg, #ffd700 0%, #ff8a00 100%)
+						+pseudo(before)
+							width: 100%
+							height: 6px
+							top: 0
+							left: 0
+							background-image: linear-gradient(180deg, #ffd700 0%, #ff8a00 100%)
+							border-radius: 5px 5px 0 0
+
+		.c-td
+
+			&.c-pos,
+			&.c-logo,
+			&.c-rate,
+			&.c-bonus
+				border-right: $border
+				+r(767)
+					border: 0
+
+	.c-tr
+		display: flex
+		border-radius: $border-radius
+		margin-bottom: 6px
+		+r(767)
+			flex-direction: column
+			align-items: flex-end
+
+	.c-td
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-shrink: 0
+		font-size: 17px
+		+r(767)
+			padding: 0 15px
+
+		&.c-pos
+			width: 6%
+			+r(1259)
+				width: 5%
+			+r(767)
+				width: 100%
+				margin-bottom: 20px
+				padding: 17px 0
+				background-color: $color-dark
+				border-radius: 5px 5px 0 0
+
+		&.c-logo
+			width: 28%
+			padding: 0 10px 0 30px
+			justify-content: flex-start
+			+r(1259)
+				width: 34%
+			+r(767)
+				width: 100%
+				padding: 0 15px
+				flex-direction: column
+				margin-bottom: 20px
+
+			.c-logo-img
+				margin-right: 26px
+				flex-shrink: 0
+				+r(991)
+					max-width: 80px
+				+r(767)
+					margin-right: 0
+					margin-bottom: 5px
+
+				img
+					border-radius: 50%
+
+			.c-logo-title
+				text-align: left
+				+r(767)
+					font-weight: 500
+
+		&.c-rate
+			width: 25%
+			padding: 0 50px
+			flex-direction: column
+			+r(1259)
+				width: 20%
+				padding: 0 20px
+			+r(767)
+				width: 100%
+				padding: 0 15px
+				margin-bottom: 15px
+
+			.c-rate-text
+				margin-bottom: 5px
+				+r(767)
+					font-size: 15px
+				+r(575)
+					font-size: 14px
+
+			.c-rate-title
+				display: none
+				+r(767)
+					display: inline-block
+
+			.c-rate-bar
+				width: 100%
+				height: 25px
+				border: 1px solid #8e8e8e
+				border-radius: 50px
+				position: relative
+				+r(767)
+					max-width: 260px
+
+			.c-rate-count
+				position: absolute
+				height: 100%
+				top: 0
+				left: 0
+				background-image: linear-gradient(90deg, #FFD700 2%, #FF8A00 96%)
+				border-radius: 50px
+
+		&.c-bonus
+			width: 17%
+			+r(1259)
+				width: 19%
+			+r(767)
+				width: 100%
+				margin-bottom: 15px
+
+		&.c-nav
+			width: 24%
+			flex-direction: column
+			+r(1259)
+				width: 20%
+			+r(767)
+				width: 100%
+				flex-direction: row
+				justify-content: center
+
+			.btn
+				+r(991)
+					min-width: 106px
+					padding: 8px 20px
+					font-size: 15px
+
+				+ .btn
+					margin-top: 22px
+					+r(991)
+						margin-top: 15px
+					+r(767)
+						margin-top: 0
+						margin-left: 15px
+

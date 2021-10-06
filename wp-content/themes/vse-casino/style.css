@@ -1,0 +1,108 @@
+/*
+Theme Name: Vse Casino
+Version: 1.1
+Description: Все казино
+Author: sercraft
+*/
+
+/*Стандартные стили*/
+.only {
+	/* display:none !important; */
+}
+@media all and (max-width:991px){
+	.c-td.c-logo img {	
+		height: auto;
+	}
+}
+.alignnone {
+    margin: 5px 40px 20px 0;
+}
+.aligncenter, div.aligncenter {
+    margin: auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 40px;
+}
+.alignleft {
+    float:left;
+    margin: 5px 40px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 40px;
+}
+a img.alignnone {
+    margin: 5px 40px 20px 0;
+}
+a img.alignleft {
+    float:left;
+    margin: 5px 40px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 40px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 40px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 40px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+a {
+    color:#00f3ff;
+}
+
+.footer-menu .menu li {
+  margin: 0px 20px;
+}
+.footer-menu .menu li a {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1259px) {
+    .footer-menu .menu li {
+      margin: 0px 10px;
+    }
+    .footer-menu .menu li a {
+      font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer-menu .menu li {
+      margin: 5px 0;
+    }
+    .footer-menu .menu li a {
+      font-size: 20px;
+    }
+}

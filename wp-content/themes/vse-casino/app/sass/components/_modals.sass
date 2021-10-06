@@ -1,0 +1,83 @@
+#small-dialog
+	background: #2c364a
+	padding: 20px 30px
+	text-align: left
+	width: 100%
+	max-width: 400px
+	margin: 40px auto
+	position: relative
+
+	.ajax-loader
+		position: absolute
+		right: 12px
+		bottom: 12px
+
+
+	.popup-title
+		color: #fff
+		font-family: $font-roboto
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 20px
+
+	.popup-item
+		padding-left: 40px
+		position: relative
+		color: #fff
+		font-size: 18px
+		font-family: $font-roboto
+		margin-bottom: 20px
+		display: flex
+		flex-direction: column
+
+		a
+			color: #fff
+			font-weight: 700
+
+			&:hover
+				color: #92b337
+
+	.popup-item-icon
+		position: absolute
+		top: -3px
+		left: 0
+		width: 20px
+		height: 20px
+		text-align: center
+
+		i
+			font-size: 20px
+			color: #fff
+
+	.popup-item-title
+		font-size: 14px
+		margin-bottom: 10px
+
+	.mfp-close
+		color: #fff
+		right: 13px
+		top: 15px
+
+
+.my-mfp-zoom-in .zoom-anim-dialog
+	opacity: 0
+	transition: all 0.2s ease-in-out
+	transform: scale(0.8)
+
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+	opacity: 1
+	transform: scale(1)
+
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+	transform: scale(0.8)
+	opacity: 0
+
+.my-mfp-zoom-in.mfp-bg
+	opacity: 0
+	transition: opacity 0.3s ease-out
+
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+	opacity: 0.8
+
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+	opacity: 0

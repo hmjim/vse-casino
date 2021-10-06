@@ -1,0 +1,53 @@
+
+.anchor-sidebar
+	width: calc(33.3333% - 10px)
+	position: relative
+	+r(991)
+		width: 100%
+		margin-bottom: 30px
+
+	.anchor-menu
+		padding: 30px 35px
+
+		ol
+			margin: 0
+			padding: 0
+			list-style-type: none
+			counter-reset: list
+
+			li
+				padding-left: 40px
+				position: relative
+
+				&:not(:last-child)
+					margin-bottom: 19px
+
+				&::before
+					position: absolute
+					counter-increment: list
+					content: counter(list) "."
+					left: 0
+
+			a
+				color: $color-text
+				text-decoration: none
+
+				&:hover
+					color: $color-accent
+
+.anchor-content
+	width: calc(66.6667% - 20px)
+	margin-left: 30px
+	+r(991)
+		width: 100%
+		margin-left: 0
+
+	.anchor-section
+		padding: 30px
+
+.anchor-section
+	background-color: $color-block-bg
+	border-radius: $border-radius
+
+	&:not(:last-child)
+		margin-bottom: 30px

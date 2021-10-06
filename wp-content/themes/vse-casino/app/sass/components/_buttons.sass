@@ -1,0 +1,76 @@
+.btn
+	min-width: 145px
+	display: inline-block
+	padding: 10px 40px
+	font-size: 18px
+	line-height: 20px
+	text-transform: uppercase
+	text-align: center
+	text-decoration: none
+	border: 0
+	border-radius: 10px
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+	transition: $transition
+	cursor: pointer
+	+r(1259)
+		font-size: 16px
+		padding: 10px 25px
+
+.btn-accent
+	color: $color-white
+	background-color: $color-accent
+
+	&:hover,
+	&:focus,
+	&:active
+		color: $color-white
+		background-color: lighten($color-accent, 15%)
+
+.btn-light
+	color: $color-dark
+	background-color: $color-blue
+
+	&:hover,
+	&:focus,
+	&:active
+		color: $color-dark
+		background-color: darken($color-blue, 20%)
+
+.btn-big
+	padding: 15px 42px
+	+r(1259)
+		padding: 15px 30px
+
+.btn-fullwidth
+	width: 100%
+	text-align: center
+
+//#return-to-top
+//	position: fixed
+//	bottom: 20px
+//	left: calc(100% - 60px)
+//	width: 39px
+//	height: 73px
+//	opacity: 0.95
+//	background-color: rgba(#ff2424, .75)
+//	border-radius: 20px
+//	z-index: 5
+//	display: none
+//	transition: all 0.3s ease
+//
+//	span
+//		display: block
+//		margin: 0 auto
+//		position: relative
+//		width: 21px
+//		height: 15px
+//		top: 23px
+//		+png(btn-top)
+//		background-repeat: no-repeat
+//		transition: all 0.3s ease
+//
+//	&:hover
+//		background-color: #ff2424
+//
+//		span
+//			top: 13px

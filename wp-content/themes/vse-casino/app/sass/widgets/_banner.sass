@@ -1,0 +1,64 @@
+.banner
+	padding: 106px 0 95px
+	background-color: $color-dark
+	margin-bottom: 60px
+	+png(banner)
+	background-repeat: no-repeat
+	background-position: calc(50% + 250px) center
+	+r(991)
+		background-size: 300px
+	+r(767)
+		background-position: calc(50% + 180px) center
+		background-size: 270px
+	+r(575)
+		padding: 50px 0
+		text-align: center
+		background-position: center 80px
+		background-size: 200px
+
+	.banner-text-1
+		color: $color-accent
+		font-size: 28px
+		font-weight: 500
+		line-height: 42px
+		margin-bottom: 5px
+		+r(575)
+			margin-bottom: 260px
+
+	.banner-text-2
+		color: $color-white
+		font-size: 50px
+		font-weight: 500
+		line-height: 75px
+		text-transform: uppercase
+		margin-bottom: 5px
+		+r(991)
+			font-size: 43px
+			line-height: 65px
+		+r(767)
+			font-size: 32px
+			line-height: 55px
+		+r(374)
+			font-size: 27px
+			line-height: 50px
+
+	.banner-text-3
+		color: $color-blue
+		font-size: 28px
+		font-weight: 300
+		line-height: 42px
+		margin-bottom: 38px
+
+	.banner-text-1,
+	.banner-text-3
+		+r(991)
+			font-size: 24px
+			line-height: 30px
+		+r(767)
+			font-size: 18px
+			line-height: 25px
+		+r(374)
+			font-size: 15px
+			line-height: 23px
+
+
