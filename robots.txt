@@ -29,4 +29,4 @@ Disallow: /casino/eldorado/eldorado-6/
 Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
-Host: vse-topscasino.azurewebsites.net
+Host: vse-topscasinos.azurewebsites.net

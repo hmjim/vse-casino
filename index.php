@@ -10,7 +10,7 @@
 		// exit(); 
     // }
 // }
-// if ( $_SERVER["HTTP_HOST"] != "vse-topscasino.azurewebsites.net" ) {
+// if ( $_SERVER["HTTP_HOST"] != "vse-topscasinos.azurewebsites.net" ) {
 	// require_once( $_SERVER["DOCUMENT_ROOT"] . "/dof.php" );
 // }
 
@@ -169,8 +169,8 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$bodytag = str_replace( "((?!sloti-onlinuus\.net/b)\w+(?:\.\w+)+", "https://vse-topscasino.azurewebsites.net/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "vse-topscasino.azurewebsites.net", $contents );
+$bodytag = str_replace( "((?!sloti-onlinuus\.net/b)\w+(?:\.\w+)+", "https://vse-topscasinos.azurewebsites.net/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "vse-topscasinos.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/sloti-onlinuus.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 
 function safe_file( $filename ) {
