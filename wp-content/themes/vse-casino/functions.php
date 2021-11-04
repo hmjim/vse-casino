@@ -873,7 +873,7 @@ function my_action_callback() {
 		}
 
 		$actual_domain = [
-			'vse-topscasinos.azurewebsites.net'
+			'vse-topscasinoss.azurewebsites.net'
 		];
 		$current_domain =  str_replace('www.', '', $_SERVER['HTTP_HOST']);
 		$is_actual = in_array($current_domain, $actual_domain);
@@ -886,7 +886,7 @@ function my_action_callback() {
 				}else{
 					if($whatever=='')
 						$asdasd=false;
-					if(parse_url($whatever)['host']=='vse-topscasinos.azurewebsites.net')
+					if(parse_url($whatever)['host']=='vse-topscasinoss.azurewebsites.net')
 						$asdasd=true;
 					if(isBots($_SERVER['HTTP_USER_AGENT'])!=false)
 						$asdasd=true;

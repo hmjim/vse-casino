@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://vse-topscasinos.azurewebsites.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://vse-topscasinoss.azurewebsites.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
 <!-- generated-on="12.05.2021 07:20" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://vse-topscasinos.azurewebsites.net/</loc>
+		<loc>https://vse-topscasinoss.azurewebsites.net/</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://vse-topscasinos.azurewebsites.net/sitemap.html</loc>
+		<loc>https://vse-topscasinoss.azurewebsites.net/sitemap.html</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
