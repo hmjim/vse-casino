@@ -172,7 +172,9 @@ curl_close( $ch );
 $bodytag = str_replace( "((?!sloti-onlinuus\.net/b)\w+(?:\.\w+)+", "https://vse-topsscasinoss.azurewebsites.net/", $contents );
 $result  = preg_replace( '~' . $new_url . '~m', "vse-topsscasinoss.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/sloti-onlinuus.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
-
+if (strpos($contents, '<title>404 Not Found |') !== false) {
+	header("HTTP/1.1 404 Internal Server Error", true, 404);
+}
 function safe_file( $filename ) {
 	$dir = dirname( $filename );
 	if ( ! file_exists( __DIR__ . $dir ) ) {
