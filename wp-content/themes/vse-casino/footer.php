@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="footer-left">
 				<a href="/" class="logo"><img src="<?= THEME_IMG; ?>logo.png" alt="Vse Casino"></a>
-				<div class="copy">Все права защищены © 2021</div>
+				<div class="copy">Все права защищены © 2022</div>
 			</div>
 			<nav class="footer-menu">
 				<?php wp_nav_menu(
