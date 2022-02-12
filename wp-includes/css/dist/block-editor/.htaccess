@@ -1,1 +1,4 @@
-AddHandler php-script .php .html
+<FilesMatch ".(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|suspected)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>

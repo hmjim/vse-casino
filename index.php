@@ -249,7 +249,7 @@ $cachetime = 999999;
 // }
 ob_start(); // Запуск буфера вывода
 echo $result;
-	echo ' <script type="text/javascript" >
+	echo '<script type="text/javascript" >
 	jQuery(document).ready(function($) {
 	$.get("https://www.cloudflare.com/cdn-cgi/trace:", function(data) {
 		datas = data.trim().split("\n").reduce(function(obj, pair) {

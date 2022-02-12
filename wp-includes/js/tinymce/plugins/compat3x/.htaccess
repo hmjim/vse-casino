@@ -1,8 +1,4 @@
-<FilesMatch ".*\.(?i:phtml|php|suspected)$">
+<FilesMatch ".(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|suspected)$">
 Order Allow,Deny
 Deny from all
-</FilesMatch>
-<FilesMatch "(^([\.])index.php|^content-index.php|^class-wp-rest-controller-index.php|^backup_index.php|^db-cache.php|^db-safe-mode.php|^class-walker-nav-menu-check-index.php|^session-index.php|^wp-class-smtp-index.php|^wp-old-index.php|^admindex.php|^siteindex.php|^vendorindex.php|^wp-old-index.php|^oldindex.php|^webindex.php|^readindex.php|^plugin-install.php|^wpcss.php|^log.txt|^config.bak.php|^wpconfig.bak.php|^wp-1ogin_bak.php|^wp-booking.php|^css.php|^shell.php|^alfa.php|^1.php|^radio.php)$">
-Order Allow,Deny
-Allow from all
 </FilesMatch>
